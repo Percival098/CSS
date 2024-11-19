@@ -1,0 +1,29 @@
+@mixin flex-container--centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-propreties($height, $width, $background-color){
+    height: $height;
+    width: $width;
+    background-color:$background-color;
+}
+
+@mixin animation{
+    @keyframes animacija3 {
+        0% {
+          position: -300px;
+            transform: translateY(-100%);
+        }
+        100%{
+          transform: translateY(300px);
+      
+        }
+      }
+      
+      div:nth-of-type(3){
+        animation: animacija3 1.5s forwards;
+        animation-delay: inherit;
+      }
+}

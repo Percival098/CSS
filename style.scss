@@ -1,0 +1,53 @@
+@import"Base/colors";
+@import"Abstract/mixins";
+@import"base/reset";
+
+body{
+  background: url(blur-clean.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+
+main{
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+    div:first-child{
+      transform: translateY(-100%);
+      @include animation;
+      @include flex-container--centered;
+      @include box-propreties(20rem, 20rem, $div-1);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 7rem;
+      font-weight: bold;
+      color: white;
+      border: 5px solid white;
+        
+      }
+    
+      div:nth-child(2) {
+        transform: translateY(-100%);
+        @include animation;
+        @include flex-container--centered;
+        @include box-propreties(20rem, 20rem, $div-2);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 7rem;
+        font-weight: bold;
+        color: white;
+        border: 5px solid white;
+    }
+      
+    
+      div:nth-child(3){
+        transform: translateY(-100%);
+        @include animation;
+        @include flex-container--centered;
+        @include box-propreties(20rem, 20rem, $div-3);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 7rem;
+        font-weight: bold;
+        color: white;
+        border: 5px solid white;
+      }
+    }
